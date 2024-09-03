@@ -63,7 +63,7 @@
     </div>
     <div id="countdown">Choose an option to start the countdown</div>
     <div class="clock-container">
-        <img src="https://example.com/clock-image.jpg" alt="Clock" class="clock-image">
+        <imgsrc="https://example.com/clock-image.jpg" alt="Clock" class="clock-image">
     </div>
 
     <script>
