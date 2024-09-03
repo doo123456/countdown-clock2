@@ -8,12 +8,18 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #282c34;
             color: white;
+        }
+        #logo {
+            width: 200px; /* Adjust the size as needed */
+            height: auto;
+            margin-bottom: 20px;
         }
         #countdown {
             font-size: 48px;
@@ -22,6 +28,10 @@
     </style>
 </head>
 <body>
+    <!-- Logo Image -->
+    <img id="logo" src="Listo_SM+Post_Logo-annimation.jpg" alt="Listo Burrito Logo">
+
+    <!-- Countdown Timer -->
     <div id="countdown"></div>
 
     <script>
