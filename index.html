@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24-Hour Countdown Clock</title>
+    <title>24-Hour Countdown</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,12 +14,10 @@
             margin: 0;
             background-color: #282c34;
             color: white;
-            position: relative;
         }
         #countdown {
             font-size: 48px;
             color: #FFD700;
-            text-align: center;
         }
     </style>
 </head>
@@ -27,10 +25,7 @@
     <div id="countdown"></div>
 
     <script>
-        function startCountdown() {
-            // Calculate the target time 24 hours from now
-            const targetTime = new Date().getTime() + 24 * 60 * 60 * 1000;
-
+        function startCountdown(targetTime) {
             const countdownInterval = setInterval(function() {
                 const now = new Date().getTime();
                 const distance = targetTime - now;
@@ -49,8 +44,9 @@
             }, 1000);
         }
 
-        // Start the countdown now
-        startCountdown();
+        // Set the target time to 24 hours from a specific time (e.g., Sept 5, 2024, 10:00 AM)
+        const targetTime = new Date("Sep 5, 2024 10:00:00").getTime();
+        startCountdown(targetTime);
     </script>
 </body>
 </html>
