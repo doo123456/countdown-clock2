@@ -55,7 +55,7 @@
         }
 
         // Set the target time to 24 hours from a specific time (e.g., Sept 5, 2024, 10:00 AM)
-        const targetTime = new Date("Sep 3, 2024 14:21:00").getTime();
+        const targetTime = new Date("Sep 3, 2024 16:00:00").getTime();
         startCountdown(targetTime);
     </script>
 </body>
